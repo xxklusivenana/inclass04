@@ -1,0 +1,112 @@
+:root {
+  --cupid-pink: #ffafcc;
+  --valentine-red: #ff4d6d;
+  --love-purple: #c77dff;
+  --chocolate: #7b3f00;
+  --vanilla: #fffaf0;
+  
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 2rem;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background-color: var(--vanilla);
+    color: var(--love-purple);
+}
+.main-header {
+    position: sticky;
+    top: 0;
+    background-color: var(--vanilla);
+    padding: var(--space-3);
+    border-bottom: 2px solid var(--valentine-red);
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--chocolate);
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a:active {
+    color: var(--valentine-red);
+    transform: scale(1.1);
+}
+
+.hero-banner {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--cupid-pink), var(--love-purple));
+    color: white;
+}
+
+.animated-headline {
+    font-size: 3rem;
+    animation: flotating 5s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.interactive-stage {
+    padding: var(--space-4);
+    text-align: center;
+}
+
+.cupid-arrow {
+    font-size: 4rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cupid-arrow:hover {
+    animation: heartbeat 0.9s infinite;
+}
+
+.content-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-3);
+    padding: var(--space-4);
+}
+
+.love-card {
+    background: white;
+    padding: var(--space-3);
+    border-radius: 10px;
+    border: 2px solid var(--cupid-pink);
+    transition: all 0.3s ease;
+}
+
+.love-card:hover {
+    border-color: var(--valentine-red);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--vanilla);
+}
+
+.romantic-footer {
+    text-align: center;
+    padding: var(--space-4);
+    background-color: var(--valentine-red);
+    color: var(--vanilla);
+}
+
