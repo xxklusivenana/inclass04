@@ -1,3 +1,31 @@
+body {
+  /*google font*/
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color: #ffafcc;
+}
+
+nav {
+  background-color: #ff4d6d;
+  overflow: hidden;
+  width: 100%;
+  position:sticky;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  font-size: 25px;
+}
+
 /* Valentine's Day Color Palette & Variables */
 :root {
   --cupid-pink: #ffafcc;
