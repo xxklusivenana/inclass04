@@ -93,3 +93,15 @@ body {
     position: relative;
     left: 90px;
 }
+
+header, h1, h2 {
+    color: #7b3f00;
+}
+
+p {
+    color: #ff4d6d;
+}
+
+footer {
+    
+}
